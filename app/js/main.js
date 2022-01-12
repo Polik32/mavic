@@ -14,7 +14,14 @@ $('.questions__item-title').on('click', function(){
 $('#fullpage').fullpage({
     autoScrolling: true,
     scrollHorizontally: true,
-    sectionSelector: '.page-section'
+    sectionSelector: '.page-section',
+    scrollOverflow: true,
+    menu: '#header__nav',
+    anchors: ['top', 'products', 'benefits', 'specification', 'questions', 'contacts'],
+})
+
+$('.menu__btn').on('click', function(){
+    $('.menu__btn').toggleClass('menu__btn--active');
 })
 
 });

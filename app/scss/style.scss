@@ -49,6 +49,12 @@
             padding-left: 20px;
         }
     }
+    &__list-phone{
+        display: none;
+    }
+    &__btn{
+        display: none;
+    }
 }
 
 .top{
@@ -496,3 +502,5 @@
         color: rgba(#fff, .64);
     }
 }
+
+@import 'media';
